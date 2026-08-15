@@ -1,0 +1,238 @@
+.rightbar{
+    /* height: 740px; */
+    width: 320px;
+    border-radius: 10px;
+    /* border: 1px solid rgb(59, 59, 59); */
+    /* padding-top: 17px; */
+    /* margin-top: -72px; */
+    margin-top: -102px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap:1rem;
+    color: white;
+} 
+
+.recent-paste-div{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    /* margin-top: 20px; */
+    /* border-radius: 10px;*/
+    /* border: 1px solid rgb(166, 17, 17);  */
+}
+
+.recent-paste{
+    position:relative;
+    width: 100%;
+    height: 57px;
+    border-top: 1px solid rgb(59, 59, 59);
+    border-left: 1px solid rgb(59, 59, 59);
+    border-right: 1px solid rgb(59, 59, 59);
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 15px;
+    gap:0.7rem;
+
+    transition: 0.3s ease;
+}
+
+.recent-paste:hover{
+    background-color: rgb(43, 43, 43);
+    cursor: pointer;
+}
+
+
+.overlay-userid{
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.642);
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userid-modal{
+    
+    height: 222px;
+    width: 510px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 12px;
+    border:1px solid rgb(79, 79, 79);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.8rem;
+
+    animation: myAni2 0.3s ease;
+}
+
+#userid-photo{
+    height:24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+.detail-para{
+    /* background-color: aqua; */
+    width: 90%;
+    font-size: 14px;
+    color: rgb(151, 150, 150);
+}
+
+.input-stye{
+    width: 100%;   
+    height:40px;
+    border: 1px solid #525252;
+    padding-left: 17px;
+    outline: none;
+    border-radius: 8px;
+    margin-bottom: -4px;
+    /* background-color: #2f2f2f; */
+    background-color: rgb(29, 29, 29);
+    color: rgb(196, 195, 195);
+    font-size: 16px;
+
+}
+
+.input-stye:focus{
+    border: 1px solid #c5c2c2;
+}
+
+.button-div-2{
+    width: 92%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap:0.9rem;
+    margin-top: 3px;
+    /* background-color: aqua; */
+}
+
+.cancel-btn2{
+    width: 74px;
+    height: 36px;
+    font-size: 14px;
+    color:white;
+    background-color: #3d3d3d;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    transition: 0.1s ease;
+}
+
+.cancel-btn2:hover{
+    background-color: #313131;
+    color:rgb(171, 171, 171);
+}
+
+.save-btn{
+
+    width: 120px;
+    height: 36px;
+    font-size: 14px;
+    color:white;
+    background-color: #395aff;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    transition: 0.1s ease;
+}
+
+.save-btn:hover{
+    color:rgb(171, 171, 171);
+    background-color: #2c44bd;
+}
+
+
+@keyframes myAni2{
+
+    from{
+        opacity: 0;
+        transform: translateY(100px) scale(0.8);
+        
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+
+}
+
+
+.email-modal{
+
+    height: 389px;
+    width: 348px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 8px;
+    border:1px solid rgb(79, 79, 79);
+
+    animation: myAni2 0.3s ease;
+
+}
+
+.phone-modal{
+
+    height: 389px;
+    width: 348px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 8px;
+    border:1px solid rgb(79, 79, 79);
+
+    animation: myAni2 0.3s ease;
+
+}
+
+.pass-modal{
+
+    height: 389px;
+    width: 348px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 8px;
+    border:1px solid rgb(79, 79, 79);
+
+    animation: myAni2 0.3s ease;
+
+}
+
+.empty{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+    border-radius: 10px;
+    padding:12px 22px !important;
+    font-size: 16px;
+    transform: translateY(30px);
+    /* transition: transform 0.3s ease;        
+    this will not work here as it needs
+    something before render to make changes 
+    so we will use animation here which is preffered*/
+    animation: toastAnimation 0.3s ease forwards;
+    background-color: rgb(32, 26, 18) !important;
+    border: 0.1px solid rgb(146, 103, 37);
+    color:rgb(251, 177, 66) !important;
+}
+
+@keyframes toastAnimation{
+    to{
+        transform: translateY(0);
+    }
+}

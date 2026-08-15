@@ -1,0 +1,10 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family:'Inter','Helvetica Neue','Segoe UI',sans-serif;
+}
+
+body{
+    background-color: #000000;
+}

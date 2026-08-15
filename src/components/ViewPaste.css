@@ -1,0 +1,211 @@
+#home-div{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    /* background-color: rgb(11, 43, 112); */
+    width: fit-content;
+    margin-top:-60px;
+}
+
+#home-input-row{
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-between;
+}
+
+#my-title-inp-view{
+    width: 85%;
+    height: 37px;
+    border-radius: 8px;
+    outline: none;
+    border: 0.2px solid #444446;
+    background-color: rgb(19, 19, 19); 
+    padding-left: 43px;
+    color:rgb(179, 177, 177);
+    font-size: 16px;
+}
+
+#my-title-inp-view::placeholder{
+    font-size: 16px;
+    color: rgb(152, 150, 150);
+}
+
+#my-title-inp-view:focus{
+    border: 1px solid rgb(132, 132, 132);
+}
+
+
+#create-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 37px;
+    width: 130px;
+    /* background-color: #6265ff; */
+    background-color: #ffa21629;
+    outline: none;
+    border: none;
+    color: rgb(255, 161, 22);
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    
+    font-family: 'Typo Round Regular Demo', sans-serif; 
+
+    transition:background-color 0.3s ease;
+}
+
+
+#create-btn:hover{
+     
+     background-color: #ffa21642;
+}
+
+.myTextArea-outer-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 670px;
+    width: 1000px;
+    background-color:#35373a;
+    /* align-items: end; */
+    border-radius: 3px;
+}
+
+.myTextArea-design{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 980px;
+    padding:7.3px;
+    /* background-color: aqua; */
+}
+
+.text-circle-div{
+    display: flex;
+    gap:0.3rem;
+}
+
+.text-circle{
+    width: 13px;
+    height: 13px;
+    background-color: rgb(200, 7, 171);
+    border-radius: 50%;
+}
+
+#copy-btn{
+    background-color: none;
+    border: none;
+    outline: none;
+    color: none;
+}
+
+
+/* #myTextArea{
+    width: 997px;
+    height: 630px;
+    background-color: rgb(25, 25, 25);
+    border:none;
+    resize: none;
+    outline: none;
+    border-radius: 7px;
+    margin-bottom: 0px;
+    color:white;
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+#myTextArea::placeholder{
+    font-size: 16px;
+
+}
+
+a{
+  text-decoration: none;  
+} */
+
+
+.line-number-outer-div{
+    display: flex;
+    width: 997px;
+    height: 628px;
+    /* background-color: rgb(100, 255, 10); */
+    background-color: rgb(25, 25, 25);
+    border-radius: 7px;
+    padding:0px 0px 15px 8px;
+}
+
+.line-number-div-view{
+    /* background-color: red; */
+    background-color: rgb(25, 25, 25);
+    color: rgb(106, 153, 85);
+    width: 30px;
+    height: 628px;
+    text-align: right;
+    user-select: none;
+    overflow: hidden;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+
+#myTextArea-view{
+    /* width: 998px;
+    height: 630px; */
+    width: 959px;
+    height: 628px;
+    /* background-color:#21252c; */
+    background-color: rgb(25, 25, 25);
+    border:none;
+    resize: none;
+    outline: none;
+    color:rgb(179, 177, 177);
+    padding-left: 13px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+#myTextArea-view::-webkit-scrollbar{
+    width: 6px;
+    /* background-color: #414345;
+    border-radius: 5px; */
+}
+
+#myTextArea-view::-webkit-scrollbar-thumb{
+    background-color: #797b7f;
+    border-radius: 5px;
+    cursor:grabbing;
+}
+
+#myTextArea-view::-webkit-scrollbar-thumb:hover{
+    background-color: #98999b;
+}
+
+.custom-toast{
+    display: flex;
+    gap:0.5rem;
+    background-color: rgb(11, 25, 11) !important;
+    border: 0.1px solid rgb(18, 101, 47);
+    color:rgb(59, 223, 117) !important;
+    border-radius: 10px;
+    padding:12px 22px !important;
+    font-size: 14px;
+    transform: translateY(30px);
+    /* transition: transform 0.3s ease;        
+    this will not work here as it needs
+    something before render to make changes 
+    so we will use animation here which is preffered*/
+    animation: toastAnimation 0.3s ease forwards;
+}
+
+@keyframes toastAnimation{
+    to{
+        transform: translateY(0);
+    }
+}
+
+a{
+    text-decoration: none;
+}

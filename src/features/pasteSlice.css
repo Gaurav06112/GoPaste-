@@ -1,0 +1,93 @@
+.custom-toast-create{
+    display: flex;
+    gap:0.5rem;
+    background-color: #0f111b !important;
+    border: 0.1px solid  rgb(53, 64, 166);
+    color: rgb(75, 92, 248) !important;
+    border-radius: 10px;
+    padding:12px 22px !important;
+    font-size: 14px;
+    transform: translateY(30px);
+    /* transition: transform 0.3s ease;        
+    this will not work here as it needs
+    something before render to make changes 
+    so we will use animation here which is preffered*/
+    animation: toastAnimation 0.3s ease forwards;
+}
+
+
+.custom-toast-update{
+    display: flex;
+    gap:0.5rem;
+    background-color: #21190a !important;
+    border: 0.1px solid rgb(114, 73, 12);
+    color: rgb(245, 165, 44) !important;
+    border-radius: 10px;
+    padding:12px 22px !important;
+    font-size: 14px;
+    transform: translateY(30px);
+    /* transition: transform 0.3s ease;        
+    this will not work here as it needs
+    something before render to make changes 
+    so we will use animation here which is preffered*/
+    animation: toastAnimation 0.3s ease forwards;
+}
+
+@keyframes toastAnimation{
+    to{
+        transform: translateY(0);
+    }
+}
+
+
+.custom-toast-delete{
+    display: flex;
+    gap:0.5rem;
+    background-color: #120806 !important;
+    border: 0.1px solid rgb(108, 27, 27);
+    color:  rgb(222, 76, 76) !important;
+    border-radius: 10px;
+    padding:12px 22px !important;
+    font-size: 15px;
+    transform: translateY(30px);
+    /* transition: transform 0.3s ease;        
+    this will not work here as it needs
+    something before render to make changes 
+    so we will use animation here which is preffered*/
+    animation: toastAnimation 0.3s ease forwards;
+}
+
+@keyframes toastAnimation{
+    to{
+        transform: translateY(0);
+    }
+}
+
+.saved{
+    background-color: #140f05 !important;
+    border: 0.1px solid #7b5d21 ;
+    color:   #e1ab3d !important;
+}
+
+.userToast{
+    background-color:  rgb(6, 8, 31) !important;
+    border: 0.1px solid  rgb(57, 66, 174);
+    color:  rgb(116, 128, 253) !important;
+}
+
+.custom-toast{
+    display: flex;
+    gap:0.5rem;
+    background-color: rgb(11, 25, 11) !important;
+    border: 0.1px solid rgb(18, 101, 47);
+    color:rgb(59, 223, 117) !important;
+    border-radius: 10px;
+    padding:12px 22px !important;
+    font-size: 14px;
+    transform: translateY(30px);
+    /* transition: transform 0.3s ease;        
+    this will not work here as it needs
+    something before render to make changes 
+    so we will use animation here which is preffered*/
+    animation: toastAnimation 0.3s ease forwards;
+}
